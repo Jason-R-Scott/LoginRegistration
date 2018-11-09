@@ -1,0 +1,34 @@
+@model LoginRegistration.ViewModels.RegistrationViewModel
+
+<style>
+    div 
+    {
+        width: 200px;
+        margin-left: 20px;
+    }
+</style>
+
+
+<div>
+<h1> It works!</h1>
+
+<form asp-action="Registration" asp-controller="Auth" method="POST">
+    <span asp-validation-for="FirstName"></span>
+    <label asp-for="FirstName"></label>
+    <input asp-for="FirstName">
+    <span asp-validation-for="LastName"></span>
+    <label asp-for="LastName"></label>
+    <input asp-for="LastName">
+    <span asp-validation-for="Email"></span>
+    <label asp-for="Email"></label>
+    <input asp-for="Email">
+    <span asp-validation-for="Password"></span>
+    <label asp-for="Password"></label>
+    <input asp-for="Password">
+    <span asp-validation-for="PasswordConfirmation"></span>
+    <label asp-for="PasswordConfirmation"></label>
+    <input asp-for="PasswordConfirmation">
+    <input type="submit" value="submit">
+</form>
+
+</div>

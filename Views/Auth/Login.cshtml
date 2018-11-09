@@ -1,0 +1,18 @@
+@model LoginRegistration.ViewModels.LoginViewModel
+
+<h1>Login Page</h1>
+
+
+<form asp-action="Login" asp-controller="Auth" method="POST">
+
+    <span asp-validation-for="Email"></span>
+    <label asp-for="Email"></label>
+    <input asp-for="Email"><br>
+
+    <span asp-validation-for="Password"></span>
+    <label asp-for="Password"></label>
+    <input asp-for="Password"><br>
+
+    <input type = "submit" value ="Login">
+</form>
+  
